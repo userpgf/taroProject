@@ -1,4 +1,4 @@
-import { View, Text } from '@tarojs/components'
+import { View, Text, AtButton } from '@tarojs/components'
 import { useLoad } from '@tarojs/taro'
 import './index.scss'
 
@@ -9,8 +9,16 @@ export default function Index() {
   })
 
   return (
-    <View className='index'>
+
+
+    <View>
       <Text>Hello world!</Text>
+      <AtButton type="primary">I need Taro UI</AtButton>
+      <Text>Taro UI 支持 Vue 了吗？</Text>
+      <AtButton type="primary" circle>支持</AtButton>
+      <Text>共建？</Text>
+      <AtButton type="secondary" circle>来</AtButton>
     </View>
+
   )
 }
